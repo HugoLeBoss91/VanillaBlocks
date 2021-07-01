@@ -8,7 +8,6 @@ use pocketmine\block\Block;
 use pocketmine\block\BlockToolType;
 use pocketmine\block\Transparent;
 use pocketmine\item\Item;
-use pocketmine\item\ItemFactory;
 use pocketmine\level\sound\DoorSound;
 use pocketmine\math\AxisAlignedBB;
 use pocketmine\math\Vector3;
@@ -113,6 +112,7 @@ class TrapdoorBlock extends Transparent {
         }
         return $bb;
     }
+    
     public function getVariantBitmask(): int {
       return 0;
     }
